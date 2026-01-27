@@ -1,5 +1,5 @@
 class tests: # Тестовый метод
-    __x # значения (неизменяемые)
+    __x # значения (неизменяемые извне)
     __y
     __z
     
@@ -15,6 +15,9 @@ class tests: # Тестовый метод
     def setZ(num):
         this.__z = num
         print("Изменён Z")
+
+    def printVars():
+        print(this.__x, this.__y, this.__z)
 
 class testsChild(tests): # Дочерний метод
     def __init__(x, y, z): # Конструктор сразу задающий значения
