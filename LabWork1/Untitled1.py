@@ -21,3 +21,6 @@ class testsChild(tests): # Дочерний метод
         this.setX(x)
         this.setY(y)
         this.setZ(z)
+        print("Работа конструктора завершена")
+
+
