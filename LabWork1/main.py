@@ -1,5 +1,5 @@
-import Untitled1
+import Untitled1 as mod
 
-tst = testsChild(4, 6, 8)
+tst = mod.testsChild(4, 6, 8)
 print("Значения: ")
 tst.printVars
