@@ -15,13 +15,13 @@ internal class Program
 
         while (true)
         {
-            Console.WriteLine($"{Sheet.Cell(row, col).Value}");
-            ++row;
+            Console.Write($"{Sheet.Cell(row, col).Value}\t|\t");
+            ++col;
             if (Sheet.Cell(row, col).IsEmpty())
             {
-                ++col;
-                row = 1;
-
+                ++row;
+                col = 1;
+                Console.Write("\n");
                 if (Sheet.Cell(row, col).IsEmpty())
                 {
                     break;
