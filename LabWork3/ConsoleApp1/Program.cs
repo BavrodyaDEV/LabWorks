@@ -11,11 +11,22 @@ internal class Program
         var Sheet = XLBook.Worksheet("Задание 1");
 
         int row = 1;
+        int col = 1;
 
-        while (!Sheet.Cell($"A{row}").IsEmpty())
+        while (true)
         {
-            Console.WriteLine($"{Sheet.Cell($"A{row}").Value}");
+            Console.WriteLine($"{Sheet.Cell(row, col).Value}");
             ++row;
+            if (Sheet.Cell(row, col).IsEmpty())
+            {
+                ++col;
+                row = 1;
+
+                if (Sheet.Cell(row, col).IsEmpty())
+                {
+                    break;
+                }
+            }
         }
     }
 }
