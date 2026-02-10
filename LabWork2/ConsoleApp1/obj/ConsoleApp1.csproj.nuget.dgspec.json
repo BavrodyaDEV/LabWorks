@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Redmi\\csp\\practice\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "C:\\Users\\Redmi\\labWorks\\LabWork2\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Redmi\\csp\\practice\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "C:\\Users\\Redmi\\labWorks\\LabWork2\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Redmi\\csp\\practice\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "C:\\Users\\Redmi\\labWorks\\LabWork2\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "C:\\Users\\Redmi\\csp\\practice\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "C:\\Users\\Redmi\\labWorks\\LabWork2\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\Redmi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Redmi\\csp\\practice\\ConsoleApp1\\obj\\",
+        "outputPath": "C:\\Users\\Redmi\\labWorks\\LabWork2\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Redmi\\AppData\\Roaming\\NuGet\\NuGet.Config"
