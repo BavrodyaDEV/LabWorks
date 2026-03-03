@@ -151,7 +151,8 @@ class Math // Класс с перегрузкой функций
         Console.WriteLine($"{a} / {b} = {a / b}");
     }
 
-    
+    public delegate void intMath(int a, int b);
+    public delegate void doubleMath(int a, int b);
     
     
 }
@@ -198,3 +199,4 @@ class Employee : Person<Date>
     }
     
 }
+
