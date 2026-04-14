@@ -1,0 +1,23 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="450"
+        x:Class="AvaloniaApplication1.MainWindow"
+        Width="450" Height="450"
+        Title="AvaloniaApplication1">
+    <StackPanel HorizontalAlignment="Center">
+        <Border Background="SkyBlue" CornerRadius="5">
+            <TextBlock Text="Давление на грань" FontSize="32" FontWeight="Black"/>
+        </Border>
+        <Grid RowDefinitions="35, 35" ColumnDefinitions="150, 75">
+            <TextBlock Text="ρ жидкости" Grid.Row="0" Grid.Column="0" FontSize="18" FontWeight="Black" Margin="10"></TextBlock>
+            <TextBox Grid.Column="1" Grid.Row="0" Name="Ro"/>
+            <TextBlock Text="Глубина грани" Grid.Row="1" Grid.Column="0" FontSize="18" FontWeight="Black" Margin="10"></TextBlock>
+            <TextBox Grid.Column="1" Grid.Row="1" Name="depth"/>
+        </Grid>
+        <Button Content="Расчёт" HorizontalAlignment="Center" Margin="10" FontWeight="Black" Name="Calculate" Click="Calculate_OnClick"/>
+        <TextBlock Text="0" FontWeight="Black" HorizontalAlignment="Center" FontSize="144" Name="Result"/>
+        <TextBlock Text="Па" HorizontalAlignment="Center" FontSize="24" FontWeight="Black"/>
+    </StackPanel>
+</Window>

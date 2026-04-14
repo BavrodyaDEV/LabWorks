@@ -1,0 +1,23 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="700" d:DesignHeight="500"
+        x:Class="AvaloniaApplication1.MainWindow"
+        Title="Прога"
+        Width="700" Height="500">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Border Background="LightBlue" Margin="10" Opacity="1" CornerRadius="10">
+            <TextBlock Text="Калькулятор закона архимеда" FontSize="36" FontWeight="Black" Foreground="Black"/>
+        </Border>
+        <Grid RowDefinitions="50, 50" ColumnDefinitions="Auto, Auto">
+            <TextBlock Text="Показание динамометра вне жидкости" FontSize="18" FontWeight="Bold" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center"/>
+            <TextBlock Text="Показание динамометра в жидкости" FontSize="18" FontWeight="Bold" Grid.Column="0" Grid.Row="1" VerticalAlignment="Center"/>
+            <TextBox Text="0" Name="WOWater" Grid.Column="1" Grid.Row="0" Margin="10" FontSize="18"/>
+            <TextBox Text="0" Name="WWater" Grid.Column="1" Grid.Row="1" Margin="10" FontSize="18"/>
+        </Grid>
+        <Button Content="Посчитать" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Click="Button_click"/>
+        <TextBlock Name="Result" Text="0" FontWeight="Bold" FontSize="144" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <TextBlock Text="См^3" FontWeight="Bold" FontSize="54" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+    </StackPanel>
+</Window>
